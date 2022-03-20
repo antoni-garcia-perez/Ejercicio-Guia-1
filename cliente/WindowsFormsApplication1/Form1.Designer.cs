@@ -35,11 +35,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.altura = new System.Windows.Forms.TextBox();
+            this.Alto = new System.Windows.Forms.RadioButton();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
             this.desconectar = new System.Windows.Forms.Button();
-            this.Alto = new System.Windows.Forms.RadioButton();
-            this.altura = new System.Windows.Forms.TextBox();
+            this.palindromo = new System.Windows.Forms.RadioButton();
+            this.mayusculas = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +92,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(131, 142);
+            this.button2.Location = new System.Drawing.Point(116, 183);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -101,6 +103,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.mayusculas);
+            this.groupBox1.Controls.Add(this.palindromo);
             this.groupBox1.Controls.Add(this.altura);
             this.groupBox1.Controls.Add(this.Alto);
             this.groupBox1.Controls.Add(this.Longitud);
@@ -110,10 +114,28 @@
             this.groupBox1.Controls.Add(this.nombre);
             this.groupBox1.Location = new System.Drawing.Point(8, 207);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 202);
+            this.groupBox1.Size = new System.Drawing.Size(363, 217);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
+            // 
+            // altura
+            // 
+            this.altura.Location = new System.Drawing.Point(10, 111);
+            this.altura.Name = "altura";
+            this.altura.Size = new System.Drawing.Size(77, 20);
+            this.altura.TabIndex = 10;
+            // 
+            // Alto
+            // 
+            this.Alto.AutoSize = true;
+            this.Alto.Location = new System.Drawing.Point(116, 114);
+            this.Alto.Name = "Alto";
+            this.Alto.Size = new System.Drawing.Size(98, 17);
+            this.Alto.TabIndex = 9;
+            this.Alto.TabStop = true;
+            this.Alto.Text = "Dime si soy alto";
+            this.Alto.UseVisualStyleBackColor = true;
             // 
             // Longitud
             // 
@@ -147,23 +169,27 @@
             this.desconectar.UseVisualStyleBackColor = true;
             this.desconectar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Alto
+            // palindromo
             // 
-            this.Alto.AutoSize = true;
-            this.Alto.Location = new System.Drawing.Point(116, 114);
-            this.Alto.Name = "Alto";
-            this.Alto.Size = new System.Drawing.Size(98, 17);
-            this.Alto.TabIndex = 9;
-            this.Alto.TabStop = true;
-            this.Alto.Text = "Dime si soy alto";
-            this.Alto.UseVisualStyleBackColor = true;
+            this.palindromo.AutoSize = true;
+            this.palindromo.Location = new System.Drawing.Point(116, 137);
+            this.palindromo.Name = "palindromo";
+            this.palindromo.Size = new System.Drawing.Size(180, 17);
+            this.palindromo.TabIndex = 11;
+            this.palindromo.TabStop = true;
+            this.palindromo.Text = "Dime si mi nombre es palíndromo";
+            this.palindromo.UseVisualStyleBackColor = true;
             // 
-            // altura
+            // mayusculas
             // 
-            this.altura.Location = new System.Drawing.Point(10, 111);
-            this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(77, 20);
-            this.altura.TabIndex = 10;
+            this.mayusculas.AutoSize = true;
+            this.mayusculas.Location = new System.Drawing.Point(116, 160);
+            this.mayusculas.Name = "mayusculas";
+            this.mayusculas.Size = new System.Drawing.Size(173, 17);
+            this.mayusculas.TabIndex = 12;
+            this.mayusculas.TabStop = true;
+            this.mayusculas.Text = "Dime mi nombre en mayúsculas";
+            this.mayusculas.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -199,6 +225,8 @@
         private System.Windows.Forms.TextBox altura;
         private System.Windows.Forms.RadioButton Alto;
         private System.Windows.Forms.Button desconectar;
+        private System.Windows.Forms.RadioButton mayusculas;
+        private System.Windows.Forms.RadioButton palindromo;
     }
 }
 
