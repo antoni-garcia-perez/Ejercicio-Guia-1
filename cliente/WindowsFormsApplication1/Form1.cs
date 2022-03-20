@@ -30,7 +30,7 @@ namespace WindowsFormsApplication1
             //Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
             //al que deseamos conectarnos
             IPAddress direc = IPAddress.Parse(IP.Text);
-            IPEndPoint ipep = new IPEndPoint(direc, 9050);
+            IPEndPoint ipep = new IPEndPoint(direc, 9052);
             
 
             //Creamos el socket 
@@ -66,7 +66,7 @@ namespace WindowsFormsApplication1
                 mensaje = Encoding.ASCII.GetString(msg2).Split (',')[0];
                 MessageBox.Show("La longitud de tu nombre es: " + mensaje);
             }
-            else
+            else if (Bonito.Checked)
             {
                 string mensaje = "2/" + nombre.Text;
                 // Enviamos al servidor el nombre tecleado
@@ -85,15 +85,39 @@ namespace WindowsFormsApplication1
                     MessageBox.Show("Tu nombre NO bonito. Lo siento.");
 
             }
+            else
+            {
+                //Enviamos nombre y altura
+                string mensaje ="3/" + nombre.Text + "/" + altura.Text;
+                //enviamos al servidor el nombre tecleado
+                byte[] msg = System.Text.Encoding.ASCII.GetBytes (mensaje);
+                server.Send (msg);
 
-            // Se terminó el servicio. 
+
+                //Recibimos la respuesta del servidor
+                byte[] msg2 = new byte[80];
+                server.Receive(msg2);
+                mensaje = Encoding.ASCII.GetString(msg2).Split(',')[0];
+                MessageBox.Show(mensaje);
+            }
+
+
+
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Mensaje de desconexión
+            string mensaje = "0/";
+            byte[] msg = System.Text.Encoding.ASCII.GetBytes (mensaje);
+            server.Send(msg);
+
             // Nos desconectamos
             this.BackColor = Color.Gray;
             server.Shutdown(SocketShutdown.Both);
             server.Close();
-
         }
-
-     
     }
 }

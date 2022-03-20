@@ -62,3 +62,14 @@ E:\Docencia\SO\2016-2017Q2\EjercicioGuia\ServidorSecuencial_1\cliente\WindowsFor
 E:\Docencia\SO\2016-2017Q2\EjercicioGuia\ServidorSecuencial_1\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 E:\Docencia\SO\2016-2017Q2\EjercicioGuia\ServidorSecuencial_1\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 E:\Docencia\SO\2016-2017Q2\EjercicioGuia\ServidorSecuencial_1\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.Cache
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.AssemblyReference.cache
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.SuggestedBindingRedirects.cache
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.cache
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\SO\Ejercicio Guia 1\Ejercicio_Guia_individual\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
